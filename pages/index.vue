@@ -1,6 +1,5 @@
 <template>
   <div class="Home">
-    <HeroLogo />
     <HeroImage />
     <Welcome />
     <Signup />
@@ -69,9 +68,12 @@ export default {
 .HeroImage {
   @mixin interpolate height, 45, 65;
 
+  display: flex;
+  align-items: flex-start;
+
   @media (--desktop-lg) {
     height: 80rem;
-    grid-column: 2 / 3;
+    grid-column: 1 / 3;
     grid-row: 1 / 2;
   }
 }
