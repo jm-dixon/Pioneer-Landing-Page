@@ -68,12 +68,8 @@ export default {
       },
       footerLinks: [
         {
-          text: '&copy;The Pattern Shop',
+          text: '&copy;The Pioneer',
           url: ''
-        },
-        {
-          text: 'Site Map',
-          url: '/'
         },
         {
           text: 'Terms & Conditions',

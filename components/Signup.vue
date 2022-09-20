@@ -9,7 +9,7 @@
     <div class="Signup__terms-wrapper">
       <input id="terms-conditions" v-model="acceptedTermsConditions" type="checkbox">
       <label for="terms-conditions" class="Signup__terms-label">
-        I agree for The Pattern Shop to use the submitted information
+        I agree for The Pioneer to use the submitted information
         for marketing and direct communications.
       </label>
     </div>
