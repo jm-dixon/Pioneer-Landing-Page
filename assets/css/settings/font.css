@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Solano Gothic M';
+  src: url('~/assets/fonts/Solano Gothic Pro MVB Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Solano Gothic B';
+  src: url('~/assets/fonts/Solano Gothic Pro MVB Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Contralto Big R';
+  src: url('~/assets/fonts/Contralto Big Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Jost 300 Light';
+  src: url('~/assets/fonts/Jost-300-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'IBM Plex Sans R';
+  src: url('~/assets/fonts/IBM Plex Sans Regular.ttf');
+}
+@font-face {
+  font-family: 'IBM Plex Sans B';
+  src: url('~/assets/fonts/IBM Plex Sans Bold.ttf');
+}
+
+:root {
+  --font-default: 'IBM Plex Sans R', sans-serif;
+
+  font-family: var(--font-default);
+}

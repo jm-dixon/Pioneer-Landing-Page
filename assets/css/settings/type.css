@@ -1,0 +1,53 @@
+@import "./media-queries.css";
+@import "../mixins/utils.css";
+
+h1,
+.text-h1 {
+  @mixin fluid-value font-size, 3, 5.6, 320, 1280;
+
+  font-family: var(--font-default);
+  line-height: 1.1;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+h2,
+.text-h2 {
+  font-family: var(--font-default);
+  -webkit-font-smoothing: antialiased;
+
+  @media (min-width: b(small)) {
+    font-size: 3rem;
+  }
+}
+
+h3,
+.text-h3 {
+  font-family: var(--font-default);
+  text-transform: uppercase;
+  color: var(--color-grey-dark);
+}
+
+h4,
+.text-h4 {
+  font-family: var(--font-default);
+  font-weight: 800;
+  padding-bottom: 0.5rem;
+  -webkit-font-smoothing: antialiased;
+}
+
+h5,
+.text-h5 {
+  font-family: var(--font-default);
+}
+
+h6,
+.text-h6 {
+  font-family: var(--font-default);
+}
+
+.text-default {
+  @mixin fluid-value font-size, 1.8, 2.8, 320, 1280;
+
+  font-family: var(--font-default);
+}

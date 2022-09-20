@@ -1,0 +1,111 @@
+/* @import "./media-queries"; */
+
+/*
+ * =====================================================
+ * NOTE[epic=Info] CSS Custom Properties in :root
+ * =====================================================
+ * Any css custom properties that are declared on the
+ * `:root` selector should be seen as constants and not
+ * changed at any point, anywhere else in the code base.
+ *
+ * Variables cascade similarly to properties such as
+ * `color` and are inherited by anything deeper, in this
+ * case being every element on the page. Changing any of
+ * the values elsewhere will cause a shit load of style
+ * recalculations and performance will suffer, especially
+ * on low end/mobile devices.
+ *
+ * Only add new variables in here if they are going to
+ * be used in various places, otherwise they're much
+ * better off scoped to the component they're used in,
+ * and as deep into the tree as you can get away with.
+ * =====================================================
+ */
+
+:root {
+  /* Shadows */
+  --light-shadow: 3px 4px 14px rgb(0 0 0 / 15%);
+  --shadow: 0 1px 16px rgb(0 0 0 / 25%);
+
+  /* Transitions */
+  --trans: 0.5s ease-in-out;
+  --trans-fast: 0.25s ease-in-out;
+  --trans-snappy: 0.4s cubic-bezier(0.32, 0, 0.67, 0);
+  --trans-smooth: 0.5s cubic-bezier(0.51, 0.23, 0.05, 0.92);
+
+  /* Fonts */
+  --title: "Freight", serif;
+  --text: "Freight", serif;
+  --link: "Replica", sans-serif;
+
+  /* Spacing. */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing: 1.5rem;
+  --spacing-md-sm: 2.5rem;
+  --spacing-md: 3rem;
+  --spacing-lg: 4.5rem;
+  --spacing-xl: 6rem;
+  --spacing-2xl: 9rem;
+  --spacing-3xl: 12rem;
+  --spacing-4xl: 15rem;
+
+  /*
+   * Stacking Layers (z-index)
+   * =====================================================
+   * NOTE[epic=Info] - Stacking Context
+   * =====================================================
+   * Remember, any child of an element which uses rules such
+   * as `position: fixed` or `isolation: isolate` will always
+   * be stacked on top of their parents, even if they create
+   * a new stacking context themselves, and their z-indexes
+   * are essentially reset back to zero, even if the z-index
+   * of their parent is 99999. These variables should almost
+   * exclusively be used on top level fixed elements and
+   * components. It's usually fine to set the z-index of an
+   * element that's nested inside others to -1, 1, 2 or
+   * anything else really as long as it's static, but there's
+   * really no need to set any to 100 or 23532153125 unless
+   * it's to set something above an external widget and to be
+   * safe you should set the parent element's postion to
+   * relative (not needed if it's a flex or grid container)
+   * and the z-index to 0 which will make sure that any child
+   * element's z-index is scoped to the parent's. You can
+   * read more about it at this incredibly long url bahaha
+   * https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context
+   * =====================================================
+   */
+  --fixed-layout-layer: 5;
+  --fixed-ui-sub-layer: 10;
+  --popup-layer: 15;
+  --fixed-ui-layer: 20;
+
+  /* Header */
+  --header-height: 12.2rem;
+
+  /* Borders */
+  --border-radius: 6px;
+
+  /* Containers */
+  --container-width-sm: 112rem;
+  --container-width-md: 126rem;
+  --container-width-lg: 135rem;
+  --container-padding-md: var(--spacing-md-sm);
+  --container-padding-lg: var(--spacing-md);
+
+  /* Grid - TODO (Danny): Move and refactor grid variables */
+  --Grid__width: 100%;
+  --Grid__columns: 12;
+  --Grid__maxWidth: 128rem;
+  --Grid__gutter: var(--spacing-md);
+  --Grid__padding-sm: var(--spacing-sm);
+  --Grid__padding: var(--spacing);
+  --Grid__padding-lg: var(--spacing-lg);
+
+  /* Grid columns. */
+  --Grid__gutter__total: calc(var(--Grid__gutter) * (var(--Grid__columns) - 1));
+  --Grid__remainder: calc(var(--Grid__maxWidth) - var(--Grid__gutter__total));
+  --Grid__segment: calc(var(--Grid__remainder) / var(--Grid__columns));
+  --Grid__column: calc(var(--Grid__segment) + var(--Grid__gutter));
+  --Grid__maxWidth--grid: calc(var(--Grid__maxWidth) + (var(--Grid__gutter) * 2));
+}

@@ -1,0 +1,14 @@
+@custom-media --phone-sm (width < 375px);
+@custom-media --phone-min (width >= 375px);
+@custom-media --phone-md (width < 480px);
+@custom-media --phone (width < 568px);
+@custom-media --phone-lg (width < 768px);
+@custom-media --phone-lg-min (width >= 568px);
+@custom-media --tablet (width >= 768px);
+@custom-media --mobile (width < 1024px);
+@custom-media --laptop (width >= 1024px);
+@custom-media --desktop (width >= 1280px);
+@custom-media --desktop-lg (width >= 1440px);
+@custom-media --desktop-xl (width >= 1920px);
+@custom-media --portrait (orientation: portrait);
+@custom-media --landscape (orientation: landscape);
