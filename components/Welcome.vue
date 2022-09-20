@@ -1,15 +1,12 @@
 <template>
   <div class="Welcome">
-    <h1 class="Welcome__heading">Welcome to<br>The Pattern Shop</h1>
+    <h1 class="Welcome__heading">An iconic<br />gateway building</h1>
     <p class="Welcome__text text-default">
-      Reinvented for today's innovators, located in the heart of the vibrant city of Newcastle adjacent
-      to Central Station, this extraordinary building with its remarkable 200-year history, is the ideal
-      base for businesses looking to make their mark.
-    </p>
-    <p class="Welcome__text text-default">
-      Offering flexible office spaces between 1,108 sqft and 32,367 sqft, across 4 floors, The Pattern
-      Shop brings you industry leading digital connectivityity and best in class sustainability technology
-      within spaces that exude soulful character. 
+      The Pioneer represents an attitude, a state of mind and a willingness
+      to deliver positive change. That's why this is a workspace like no other.
+      It is exemplar of architectural creativity, sustainable design and an
+      interior specification focused on enabling high performance from happy
+      and relaxed people
     </p>
   </div>
 </template>
@@ -31,7 +28,7 @@ export default {
   width: 100%;
   padding-left: 15%;
   padding-right: 15%;
-  background-color: var(--color-primary);
+  background-color: var(--color-white);
 
   @media (--phone-md) {
     padding-left: 8%;

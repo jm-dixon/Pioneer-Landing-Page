@@ -2,9 +2,6 @@
 <template>
   <div class="Footer">
     <div class="Footer__company-logos">
-      <nuxt-link to="/" class="Footer__pattern-shop-logo-wrapper">
-        <img :src="patternShopLogo" class="Footer__pattern-shop-logo-img">
-      </nuxt-link>
       <a href="/" target="_blank">
         <img :src="foundersPlaceLogo" class="Footer__founders-place-logo-img">
       </a>
@@ -38,10 +35,10 @@
 import PatternShopHorizLogoUrl from '@/assets/images/pattern-shop-logo-02-01.svg';
 import FoundersPlaceLogoUrl from '@/assets/images/founders-place-logo-01.svg';
 import ThePioneerLogoUrl from '@/assets/images/pioneer-logo-01.svg';
-import InstagramIcon from '@/assets/images/insta-svg-y.svg';
-import TwitterIcon from '@/assets/images/twitter-svg-y.svg';
-import YoutubeIcon from '@/assets/images/youtube-svg-y.svg';
-import FacebookIcon from '@/assets/images/facebook-svg-y.svg';
+import InstagramIcon from '@/assets/images/Pioneer/instagram-svg.svg';
+import TwitterIcon from '@/assets/images/Pioneer/twitter-svg.svg';
+import YoutubeIcon from '@/assets/images/Pioneer/youtube-svg.svg';
+import FacebookIcon from '@/assets/images/Pioneer/facebook-svg.svg';
 
 export default {
   name: 'Footer',
@@ -70,16 +67,16 @@ export default {
         },
       },
       footerLinks: [
-        { 
-          text: '&copy;The Pattern Shop', 
+        {
+          text: '&copy;The Pattern Shop',
           url: ''
         },
-        { 
-          text: 'Site Map', 
+        {
+          text: 'Site Map',
           url: '/'
         },
-        { 
-          text: 'Terms & Conditions', 
+        {
+          text: 'Terms & Conditions',
           url: '/'
         },
       ],
@@ -115,7 +112,6 @@ export default {
 
   @media (--desktop-lg) {
     flex-direction: row;
-    justify-content: space-evenly;
     flex-grow: 1;
     width: 100rem;
     height: 100%;

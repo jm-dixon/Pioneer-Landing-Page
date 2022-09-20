@@ -14,7 +14,7 @@
       </label>
     </div>
     <button type="submit" class="Signup__submit-button">Submit</button>
-  </div> 
+  </div>
 </template>
 
 <script>
@@ -93,7 +93,7 @@ input[type=checkbox] {
   /* stylelint-disable */
   aspect-ratio: 1;
   /* stylelint-enable */
-  border: 1px solid var(--color-lighter-orange);
+  border: 1px solid var(--color-secondary);
   cursor: pointer;
   padding: 10px;
   color: var(--color-grey);
@@ -123,8 +123,9 @@ input[type=checkbox]:checked::after {
   @mixin interpolate padding-bottom, 1.2, 2;
 
   margin-top: var(--spacing-lg);
-  background-color: black;
-  color: var(--color-primary);
+  background-color: var(--color-white);
+  color: var(--color-secondary);
+  border: 1px solid var(--color-black);
 }
 
 </style>

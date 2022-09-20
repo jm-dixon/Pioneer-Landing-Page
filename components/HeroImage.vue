@@ -1,20 +1,36 @@
 <template>
   <div class="HeroImage">
-    <img :src="imageUrl" class="HeroImage__image">
+    <img
+      :src="imageDesktop"
+      class="HeroImage__image"
+    >
+    <div class="HeroImage__logo-container">
+      <img :src="logoUrlSvg">
+      <p class="HeroImage__logo-text">
+        COMING SOON
+      </p>
+    </div>
   </div>
 </template>
 
 <script>
-import heroImageUrl from '~/assets/images/hero-image.jpg';
+import heroImageMobile from '~/assets/images/Pioneer/hero-image-mobile.jpg';
+import heroImageDesktop from '~/assets/images/Pioneer/hero-image-desktop.png'
+import logoUrl from '~/assets/images/pioneer-logo-01.svg';
 
 export default {
   name: 'HeroImage',
 
   data() {
     return {
-      imageUrl: heroImageUrl,
+      imageMobile: heroImageMobile,
+      imageDesktop: heroImageDesktop,
+      logoUrlSvg: logoUrl
     };
   },
+  computed: {
+
+  }
 }
 </script>
 
@@ -23,17 +39,38 @@ export default {
 @import "~/assets/css/mixins/utils.css";
 
 .HeroImage {
+  height: max-content;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .HeroImage__image {
-  @mixin interpolate height, 45, 65;
-
   width: 100%;
+  height: auto;
   object-fit: cover;
+  max-height: 750px;
+}
 
-  @media (--desktop-lg) {
-    height: 80rem;
-  }
+.HeroImage__logo-container {
+  background-color: var(--color-primary);
+  position: absolute;
+  padding: 35px;
+  width: 40%;
+  height: auto;
+  top: min(200px, 20vw);
+  opacity: 0.9;
+}
+
+.HeroImage__logo-container img {
+  height: 100%;
+}
+
+.HeroImage__logo-text {
+  color: var(--color-secondary);
+  text-align: center;
+  font-size: 20px;
+  padding: 1.2em 1em 0.5em 1em;
 }
 </style>
