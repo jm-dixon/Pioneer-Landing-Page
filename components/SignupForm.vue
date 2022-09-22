@@ -163,11 +163,10 @@ export default {
 }
 
 .SignupForm__terms-label {
-  /* @mixin interpolate font-size, 1.1, 1.3; */
-
   flex: 1;
   line-height: 1.3;
   font-weight: 600;
+  font-size: 1.3rem;
 
   &:hover {
     cursor: pointer;
