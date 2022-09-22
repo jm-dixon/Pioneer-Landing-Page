@@ -1,5 +1,3 @@
-/* @import "./media-queries"; */
-
 /*
  * =====================================================
  * NOTE[epic=Info] CSS Custom Properties in :root
@@ -23,6 +21,14 @@
  */
 
 :root {
+  --color-primary: #19292b;
+  --color-secondary: #a6d3ad;
+  --color-lighter-orange: #fcd826;
+  --color-black: #142628;
+  --color-light-grey: #999;
+  --color-grey: #666;
+  --color-white: #fff;
+
   /* Shadows */
   --light-shadow: 3px 4px 14px rgb(0 0 0 / 15%);
   --shadow: 0 1px 16px rgb(0 0 0 / 25%);
@@ -34,9 +40,11 @@
   --trans-smooth: 0.5s cubic-bezier(0.51, 0.23, 0.05, 0.92);
 
   /* Fonts */
-  --title: "Freight", serif;
-  --text: "Freight", serif;
-  --link: "Replica", sans-serif;
+  --title: "Contralto", sans-serif;
+  --text: "Jost", sans-serif;
+
+  /* --title: "Freight", serif; */
+  /* --link: "Replica", sans-serif; */
 
   /* Spacing. */
   --spacing-xs: 0.5rem;
@@ -44,7 +52,7 @@
   --spacing: 1.5rem;
   --spacing-md-sm: 2.5rem;
   --spacing-md: 3rem;
-  --spacing-lg: 4.5rem;
+  --spacing-lg: 5rem;
   --spacing-xl: 6rem;
   --spacing-2xl: 9rem;
   --spacing-3xl: 12rem;
@@ -88,10 +96,11 @@
 
   /* Containers */
   --container-width-sm: 112rem;
-  --container-width-md: 126rem;
-  --container-width-lg: 135rem;
-  --container-padding-md: var(--spacing-md-sm);
-  --container-padding-lg: var(--spacing-md);
+  --container-width-md: 128rem;
+  --container-width-lg: 153.6rem;
+  --container-padding-sm: var(--spacing);
+  --container-padding-md: var(--spacing-md);
+  --container-padding-lg: var(--spacing-lg);
 
   /* Grid - TODO (Danny): Move and refactor grid variables */
   --Grid__width: 100%;
@@ -108,4 +117,7 @@
   --Grid__segment: calc(var(--Grid__remainder) / var(--Grid__columns));
   --Grid__column: calc(var(--Grid__segment) + var(--Grid__gutter));
   --Grid__maxWidth--grid: calc(var(--Grid__maxWidth) + (var(--Grid__gutter) * 2));
+
+  --min-interpolation-width: 320;
+  --max-interpolation-width: 1280;
 }

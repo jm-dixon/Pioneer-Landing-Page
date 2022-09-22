@@ -1,0 +1,44 @@
+html {
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-size: 62.5%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  height: 100%;
+  font-family: 'Jost', sans-serif;
+  font-size: 1.6rem;
+  line-height: calc(28 / 16);
+  font-weight: 400;
+  background: var(--color-white);
+  color: var(--color-primary);
+}
+
+p {
+  line-height: 2.2rem;
+}
+
+:focus {
+  outline: none;
+}
+
+:selection {
+  background-color: var(--grey);
+  color: var(--white);
+}
+
+/* Page transition. */
+.page-enter-active,
+.page-leave-active {
+  transition: opacity var(--trans);
+}
+
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}

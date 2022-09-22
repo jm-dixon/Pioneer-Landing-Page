@@ -1,0 +1,18 @@
+.container {
+  width: 100%;
+  max-width: var(--container-width-md);
+  padding: 0 var(--container-padding-md);
+  margin: 0 auto;
+
+  /* @media (--tablet) {
+    padding: 0 var(--container-padding-md);
+  } */
+
+  @media (--laptop) {
+    padding: 0 var(--container-padding-lg);
+  }
+
+  @media (--desktop-xl) {
+    max-width: var(--container-width-lg);
+  }
+}
