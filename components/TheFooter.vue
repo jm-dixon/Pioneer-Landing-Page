@@ -175,21 +175,24 @@ export default {
 
 .TheFooter__links-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  column-gap: var(--spacing-md);
   width: 100%;
 
   @media (--phone-lg-min) {
-    justify-content: unset;
     column-gap: var(--spacing-lg);
   }
 
   @media (--laptop) {
-    display: block;
     position: absolute;
     right: 11.5rem;
     bottom: 5rem;
     width: max-content;
     margin-bottom: 0;
+  }
+
+  @media (--desktop-lg) {
+    column-gap: var(--spacing-xl);
   }
 }
 
@@ -200,10 +203,6 @@ export default {
 
   @media (--phone-sm) {
     font-size: 1.1rem;
-  }
-
-  @media (--desktop-lg) {
-    margin-left: 7rem;
   }
 }
 
