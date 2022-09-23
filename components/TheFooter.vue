@@ -75,7 +75,7 @@ export default {
 }
 </script>
 
-<style lang="postcss">
+<style lang="postcss" scoped>
 @import '~/assets/css/settings/media-queries.css';
 @import '~/assets/css/mixins/utils.css';
 

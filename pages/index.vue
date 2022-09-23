@@ -15,7 +15,7 @@ export default {
 }
 </script>
 
-<style lang="postcss">
+<style lang="postcss" scoped>
 @import '~/assets/css/settings/media-queries.css';
 
 .Home__body {
