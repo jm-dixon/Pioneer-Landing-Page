@@ -6,7 +6,7 @@
       to deliver positive change. That's why this is a workspace like no other.
       It is exemplar of architectural creativity, sustainable design and an
       interior specification focused on enabling high performance from happy
-      and relaxed people
+      and relaxed people.
     </p>
   </div>
 </template>
@@ -17,37 +17,27 @@ export default {
 }
 </script>
 
-<style lang="postcss">
-@import "~/assets/css/settings/media-queries.css";
-@import "~/assets/css/mixins/utils.css";
+<style lang="postcss" scoped>
+@import '~/assets/css/settings/media-queries.css';
+@import '~/assets/css/mixins/utils.css';
 
 .Welcome {
-  @mixin interpolate padding-top, 5, 10;
-  @mixin interpolate padding-bottom, 5, 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: var(--spacing-md);
+  text-align: center;
 
-  width: 100%;
-  padding-left: 15%;
-  padding-right: 15%;
-  background-color: var(--color-white);
-
-  @media (--phone-md) {
-    padding-left: 8%;
-    padding-right: 8%;
+  @media (--laptop) {
+    align-items: flex-start;
+    row-gap: var(--spacing-lg);
+    text-align: initial;
   }
-}
-
-.Welcome__heading {
-  @mixin interpolate margin-bottom, 3, 5;
-
-  padding-left: 8px;
 }
 
 .Welcome__text {
   line-height: 1.3;
-}
-
-.Welcome__text:not(:first-of-type) {
-  margin-top: 2rem;
+  max-width: 50rem;
 }
 
 </style>

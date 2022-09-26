@@ -9,6 +9,7 @@
 @custom-media --laptop (width >= 1024px);
 @custom-media --desktop (width >= 1280px);
 @custom-media --desktop-lg (width >= 1440px);
-@custom-media --desktop-xl (width >= 1920px);
+@custom-media --desktop-xl (width >= 1536px);
+@custom-media --desktop-2xl (width >= 1920px);
 @custom-media --portrait (orientation: portrait);
 @custom-media --landscape (orientation: landscape);

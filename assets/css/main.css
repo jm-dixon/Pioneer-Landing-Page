@@ -5,11 +5,12 @@
 
 /* Settings */
 @import "./settings/font";
-@import "./settings/type";
-@import "./settings/colors";
 @import "./settings/vars";
+@import "./settings/type";
+@import "./settings/page";
 
 /* Layout */
+@import "./layout/container";
 @import "./layout/flex";
 @import "./layout/grid";
 @import "./layout/stack";

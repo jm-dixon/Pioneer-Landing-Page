@@ -4,11 +4,6 @@
   $(property): clamp($min * 10px, calc(($min * 10px) + (10 * ($max - $min)) * (100vw - $minscreen * 1px) / ($maxscreen - $minscreen)), $max * 10px);
 }
 
-:root {
-  --min-interpolation-width: 320;
-  --max-interpolation-width: 1280;
-}
-
 @define-mixin interpolate $property, $min, $max {
   @mixin fluid-value $property, $min, $max, var(--min-interpolation-width), var(--max-interpolation-width);
 }
