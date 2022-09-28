@@ -2,11 +2,11 @@
 <template>
   <div class="TheFooter">
     <div class="TheFooter__company-logos">
-      <a href="http://www.thepioneernewcastle.co.uk" target="_blank">
+      <a href="/" target="_blank">
         <LogoThePioneer class="TheFooter__logo text-color-white"/>
         <!-- <img :src="thePioneerLogo" class="TheFooter__the-pioneer-logo-img"> -->
       </a>
-      <a href="http://www.foundersplacenewcastle.co.uk" target="_blank">
+      <a href="https://www.foundersplacenewcastle.co.uk" target="_blank">
         <LogoFoundersPlace class="TheFooter__logo text-color-secondary"/>
         <!-- <img :src="foundersPlaceLogo"> -->
       </a>
