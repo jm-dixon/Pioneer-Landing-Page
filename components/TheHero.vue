@@ -1,7 +1,7 @@
 <template>
   <div class="TheHero">
     <div class="TheHero__image">
-      <img src="images/hero-image-desktop.png">
+      <img src="images/hero-image-desktop.jpg">
     </div>
     <div class="TheHero__logo-container">
       <LogoThePioneer class="TheHero__logo"/>
