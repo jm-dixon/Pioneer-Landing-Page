@@ -1,7 +1,7 @@
 <template>
   <div class="Welcome">
-    <h1 class="Welcome__heading">Behind every pioneer lies<br /> a human story and it was<br /> from this very site
-    in<br /> Newcastle that the <br />inventive spirit of George<br /> and Robert Stephenson<br /> transformed the world</h1>
+    <h1 class="Welcome__heading">Behind every pioneer lies a human story and it was from this very site
+    in Newcastle that the inventive spirit of George and Robert Stephenson transformed the world</h1>
     <p class="Welcome__text text-default">
       Today, we're welcoming a new generation of innovators to a workplace that brings
       people, collaboration, and wellbeing together. Adjacent to Newcastle's Central Station with
