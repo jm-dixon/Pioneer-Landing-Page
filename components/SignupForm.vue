@@ -145,20 +145,20 @@ export default {
   width: 3.5rem;
   height: 3.5rem;
   border: 1px solid var(--color-secondary);
+  cursor: pointer;
+  padding: 10px;
+  color: var(--color-grey);
+  font-size: 3rem;
 
   &:hover {
     cursor: pointer;
   }
 
   &:checked::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 80%;
-    height: 80%;
-    background: var(--color-secondary);
-    transform: translate(-50%, -50%);
+    content: '\00d7';
+    position: relative;
+    top: -22px;
+    left: -2px;
   }
 }
 

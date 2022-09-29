@@ -4,14 +4,14 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'the-pioneer',
+    title: 'The Pioneer | An Iconic Gateway Building',
     htmlAttrs: {
       lang: 'en',
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: "Pioneer represents an attitude, a state of mind and a willingness to deliver positive change. That's why this is a workspace like no other. It is exemplar of architectural creativity, sustainable design and an interior specification focused on enabling high performance from happy and relaxed people." },
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
