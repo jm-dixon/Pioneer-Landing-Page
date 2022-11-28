@@ -12,7 +12,7 @@
       </a>
     </div>
     <div class="TheFooter__social-links">
-      <a
+      <a target="blank"
         v-for="icon in socialLinks"
         :key="icon.name"
         :href="icon.url"
@@ -58,10 +58,10 @@ export default {
   computed: {
     socialLinks() {
       return [
-        { name: 'Instagram', url: '#' },
-        { name: 'Twitter', url: '#' },
-        { name: 'Youtube', url: '#' },
-        { name: 'Facebook', url: '#' },
+        { name: 'Instagram', url: 'https://www.instagram.com' },
+        { name: 'Twitter', url: 'https://www.twitter.com' },
+        { name: 'Youtube', url: 'https://www.youtube.com' },
+        { name: 'Facebook', url: 'https://www.facebook.com' },
       ];
     },
 
